@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+/* //////////// */
+
+
+
+.bigContainer {
+    display: flex;
+    height: 100vh;
+}
+
+/* ////////////left side/////////////////////left side///////////// */
+
+
+aside {
+
+    background-color: rgb(165, 165, 165);
+    width: 30%;
+    height: 100%;
+
+
+}
+
+
+/* ////////////profilebar///////////// */
+/* 
+.profilebar {
+    width: auto;
+    height: auto;
+    background-color: lightgray;
+    display: flex;
+}
+
+
+.profpic {
+    width: auto;
+    height: 50px;
+}
+
+.profpic #Prof-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+ */
+
+/* ////////////contacts///////////// */
+
+/* 
+.search-box {
+    background: #fff;
+    padding: 10px 13px;
+} */
+/* 
+.input-wrapper {
+    background: #fff;
+    border-radius: 40px;
+}
+
+i {
+    color: grey;
+    margin-left: 7px;
+} */
+
+#users-list {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.user {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: lightgray;
+    padding: 7px 8px;
+    background: #fff;
+}
+
+.user:hover{
+    background-color: rgba(1, 1, 1, 0.02);
+}
+
+
+/* .user-list{
+    text-decoration: none;
+    list-style-type: none;
+} */
+
+.user-img
+{
+    display: block;
+	float: left;
+	height: 50px;
+	width: 50px;
+	background: turquoise;
+}
+
+.user-title{
+    margin-left: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+
+}
+
+
+
+
+
+/* ////////////Right side/////////////////////Right side///////////// */
+
+
+
+center {
+    background-color: rgb(165, 165, 165);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* ////////////infobar///////////// */
+
+
+.info-bar {
+    height: 50px;
+    justify-content: left;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+
+}
+
+.account-info {
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    font-size: 15px;
+}
+
+.username-card {
+    display: flex;
+    flex-direction: initial;
+    /* justify-content: left; */
+}
+
+#username {
+    padding-top: 5px;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* ////////////chatting///////////// */
+
+#chat-area {
+    overflow-y: scroll;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.chat-bubble {
+    padding: 10px 14px;
+    background: #eee;
+    margin: 10px 30px;
+    border-radius: 9px;
+    float: left;
+    
+    width: 30%;
+    
+    /* position: relative;
+    animation: fadeIn 1s ease-in; */
+
+}
+
+.chat-bubble2 {
+    padding: 10px 14px;
+    background-color: turquoise;
+    margin: 10px 30px;
+    border-radius: 9px;
+    float: right;
+    
+    width: 30%;
+    /* position: relative;*/
+    /*animation: fadeIn 1s ease-in; */
+}
+
+.message-user{
+    text-align: start;
+    font-weight: 800;
+}
+
+.message-text{
+    text-align: start;
+}
+
+.message-time{
+    text-align: end;
+}
+
+/* ////////////message///////////// */
+
+
+
+.chat-box {
+    background: #eee;
+    display: flex;
+    align-items: baseline;
+    padding: 10px 15px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+#input-msg-form{
+    display: flex;
+    width: 100%;
+}
+
+
+#msg-input {
+    width: 100%;
+    height: 2%;
+    margin: 10px 10px;
+    padding: 10px;
+    resize: none;
+    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+}
+
+.input-btn{
+    border: none;
+    
+}
+
+
+.input-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    
+}
+
+.chat-box button:nth-child(4){
+    margin-left: 15px;
+    padding-left: 10px;
+    border-left: 1px solid grey;
+}
+
+i {
+    color: gray;
+    font-size: 25px;
+    /* margin: 10px 10px; */
+
+}
+
+
+/* /////////////////////////////emoji picker////////////////////////////////// */
+
+.emojiPicker {
+
+    position: absolute;
+    float: right;
+    right: 100px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 7px #555;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 200px;
+    height: 350px;
+    z-index: 1;
+    top: -332px;
+    left: 20px;
+    overflow: scroll;
+    display: none;
+  }
+
+  .emotion{
+      cursor: pointer;
+      height: 310px; 
+      display:inline;
+  }
+
+  .emojiPicker nav {
+    position: relative;
+    z-index: 0;
+    background-color: #f2f2f2;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  .emojiPicker section {
+    overflow: scroll;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+  }
+
+  .emojiPicker div.emoji {
+    width: 1.3em;
+    height: 1.3em;
+    position: relative;
+    display: inline-block;
+  }
+
+  .emojiPicker section div {
+    width: 40px;
+    float: left;
+    margin: 3%;
+  }
+
+/* ///////////////////////////chat background color/////////////////////////////// */
+.chat-colors{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+#color-choice-0,#color-choice-1,#color-choice-2,#color-choice-3{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-left: 3px;
+    border: none;
+}
+#color-choice-0{
+    background-color: rgb(165, 165, 165);
+}
+#color-choice-0:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#color-choice-1{
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+#color-choice-1:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#color-choice-2{
+    background-image: linear-gradient(to right, #2C3E50, #FD746C);
+}
+#color-choice-2:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#color-choice-3{
+    background-image: linear-gradient(to right, #ff9a9e, #fecfef);
+}
+#color-choice-3:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

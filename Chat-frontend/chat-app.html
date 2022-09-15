@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/chat-style.css">
+</head>
+
+
+    
+<body>
+
+
+    <div class="bigContainer">
+
+
+        <!-- /////left side////////////////////////////////////////left side////// -->
+
+
+        <aside>
+
+            <!-- 
+            <div class="profilebar">
+
+
+
+                <div class="profpic">
+                    <span>
+                        <img id="Prof-img" src="./imgs/profpic.jpg" alt="Prof-img">
+
+                    </span>
+
+                </div>
+            </div> -->
+
+
+
+            <div id="users-list">
+
+
+                <!-- 
+
+                <div class=" search-box">
+                    <div class="input-wrapper">
+                        <input id="srchtext" placeholder="Search here</i>" type="text">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+
+                    </div>
+
+                </div>
+
+                <hr> -->
+
+
+
+                
+               
+            </div>
+
+
+
+
+        </aside>
+
+
+        <!-- /////Right side/////////////////////////Right side////// -->
+
+
+        <center>
+
+
+
+            <div class="info-bar">
+
+                <div class="account-info">
+
+                    <img class="user-img" src="" alt="">
+
+                    <div class=" username-card">
+                        <h4 id="username"></h4>
+                    </div>
+                    <div class="chat-colors">
+                        <button id="color-choice-0"></button>
+                        <button id="color-choice-1"></button>
+                        <button id="color-choice-2"></button>
+                        <button id="color-choice-3"></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="chat-area" class="chat-background">
+
+                
+
+            </div>
+
+            <div class="message">
+
+                
+                <div class="chat-box">
+                    <div id="myDIV"  class="emojiPicker">
+                        <nav>
+                          <div class="tab">
+                            <div class="emoji emoji-grinning" style="width: 1em; height: 1em;"></div>
+                          </div>
+                        </nav>
+                        <div id="myimoji" class="emotion">
+                        </div>
+                      </div>
+                    <button class="input-btn" id="emoji-btn"><i class="fa-solid fa-face-smile"></i></button>
+                    <form action="" id="input-msg-form">
+                    
+
+                    <!-- <input id="msg-input" type="text" placeholder="Type your message here..."> -->
+                    <textarea name="msg-input" id="msg-input" rows="1" placeholder="Type your message here..."></textarea>
+
+                    <button type="submit" class="input-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    
+
+                </form>
+                <button class="input-btn" id="voice-btn"><i class="fa-solid fa-microphone"></i></button>
+                </div>
+                
+
+
+            </div>
+
+
+
+
+        </center>
+
+
+
+    </div>
+
+
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
